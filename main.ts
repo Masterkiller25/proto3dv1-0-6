@@ -1,5 +1,4 @@
 let nbr = 0
-let barnbr2 = 0
 basic.showLeds(`
     # # # # #
     # . . . #
@@ -18,10 +17,6 @@ basic.showLeds(`
 OLED.init(128, 64)
 OLED12864_I2C.init(60)
 OLED12864_I2C.invert(true)
-while (barnbr2 < 100) {
-    OLED.drawLoading(barnbr2)
-    barnbr2 += 1
-}
 OLED12864_I2C.clear()
 OLED.clear()
 basic.forever(function () {
